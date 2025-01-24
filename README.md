@@ -1,6 +1,6 @@
 # Agung Pratama - Product Manager Portfolio
 
-This is my personal portfolio website showcasing my experience as a Lead Product Manager specializing in Growth, Automation, and Analytics. The site is built with Next.js and deployed on Vercel.
+This is my personal portfolio website showcasing my experience as a Lead Product Manager specializing in Growth, Automation, and Analytics. 
 
 ## 🌐 Live Site
 
