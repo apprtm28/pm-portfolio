@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Agung Pratama - Product Manager Resume</title>
+<style>
+/* A4 Page Settings */
+@page {
+  size: A4;
+  margin: 0.75in; /* Slightly reduced from 1in for better content fit */
+}
+
+body {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 12pt;
+  margin: 0;
+  color: #000;
+  line-height: 1.2;
+  max-width: 210mm; /* A4 width */
+  margin: 0 auto;
+  padding: 0;
+  background: white;
+}
+
+/* Download button styles */
+.download-container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.download-button {
+  display: flex;
+  align-items: center;
+  background-color: #2563eb;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-family: system-ui, -apple-system, sans-serif;
+  font-size: 14px;
+  transition: background-color 0.2s;
+}
+
+.download-button:hover {
+  background-color: #1d4ed8;
+}
+
+.download-button svg {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+}
+
+@media print {
+  body {
+    width: 210mm;
+    height: 297mm;
+  }
+  .download-container {
+    display: none;
+  }
+}
+
+/* 
+  ================
+   HEADINGS & LINES
+  ================
+*/
+h1 {
+  font-size: 18pt;
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 14pt;
+  font-weight: normal;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 4pt;
+}
+
+.header-info {
+  text-align: center;
+  font-style: normal;
+  font-size: 11pt;
+  margin-bottom: 6pt;
+}
+
+/* After the header-info style and before the resume-section-line style */
+.summary {
+  text-align: center;
+  margin: 8pt auto;
+  max-width: 85%;
+  line-height: 1.4;
+  font-size: 12pt;
+}
+
+/* Thin black line used under main headings (PROFESSIONAL EXPERIENCE, etc.) */
+.resume-section-line {
+  border: none;
+  border-top: 1px solid #000;
+  margin: 2pt 0 8pt 0;
+}
+
+/* 
+  ================
+   SECTION TITLES
+  ================
+  - e.g., PROFESSIONAL EXPERIENCE, EDUCATION, SKILLS
+*/
+.section-title {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 12pt;
+  margin-bottom: 0;
+  margin-top: 16pt;
+}
+
+.section-line {
+  border: none;
+  border-top: 1px solid #000;
+  margin: 1pt 0 8pt;
+}
+
+/*
+  ================
+   EXPERIENCE BLOCKS
+  ================
+  - Use a table or flex box for the top line (Company/Location vs Date).
+*/
+.experience-block {
+  margin-bottom: 10pt;
+}
+
+/* Top row: Company name on the left, dates on the right */
+.company-dates-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-weight: bold;
+  margin-bottom: 2pt;
+}
+
+.job-title {
+  font-weight: 500;
+  margin-bottom: 4pt;
+  margin-left: 0pt; 
+  font-style: italic; /* Keep it normal if you don't want italics */
+}
+
+/* Bullet lists */
+ul {
+  margin-top: 0;
+  margin-bottom: 10pt;
+  padding-left: 18pt;
+}
+
+li {
+  margin-bottom: 4pt; 
+}
+
+/*
+  ================
+   EDUCATION / SKILLS
+  ================
+*/
+.education-block,
+.skills-block {
+  margin-bottom: 12pt;
+}
+
+/* Another row for Education: Left is School + location, Right is date */
+.school-row {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  margin-bottom: 2pt;
+}
+
+.degree-name {
+  margin-bottom: 6pt;
+  margin-left: 0pt; /* slightly indented if needed */
+  font-weight: 100; /* Set font weight to light */
+  color: #666;
+}
+
+.degree-info {
+  margin-bottom: 6pt;
+  margin-left: 0pt; /* slightly indented if needed */
+  font-weight: 100; /* Set font weight to light */
+}
+/* 
+  ================
+   SKILLS LAYOUT
+  ================
+  - The sample resume has two columns of bullet points under SKILLS.
+  - We'll approximate with a simple 2-column table. Adjust as needed.
+*/
+.skills-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.skills-table td {
+  width: 50%;
+  vertical-align: top;
+}
+
+.skills-table ul {
+  margin: 0;
+  padding-left: 15pt;
+}
+</style>
+</head>
+<body>
+
+<!-- Download Button -->
+<div class="download-container">
+  <a href="javascript:window.print()" class="download-button">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+    </svg>
+    Download PDF
+  </a>
+</div>
+
+<!-- NAME / TITLE -->
+<h1>Agung Putra Pratama</h1>
+<h2>Lead Product Manager</h2>
+<div class="header-info">
+  Tangerang, Banten, ID | <a href="tel:+628111002630">+628111002630</a> | <a href="mailto:agung.pprtm@gmail.com">agung.pprtm@gmail.com</a> | <a href="https://linkedin.com/in/apprtm" target="_blank">linkedin.com/in/apprtm</a>
+</div>
+<hr class="resume-section-line"/>
+
+<!-- SUMMARY -->
+<div class="summary">
+  Product leader with 8+ years of experience driving digital transformation and revenue growth. 
+  Proven track record in launching successful products, optimizing processes, and implementing data-driven strategies 
+  across e-commerce and travel industries.
+</div>
+
+
+<!-- PROFESSIONAL EXPERIENCE -->
+<div class="section-title">Professional Experience</div>
+<hr class="section-line" />
+
+<!-- FIRST EXPERIENCE BLOCK -->
+<div class="experience-block">
+  <div class="company-dates-row">
+    <div>tiket.com - Jakarta, ID</div>
+    <div>Sep 2022 – Present</div>
+  </div>
+  <div class="job-title">Lead Product Manager</div>
+  <ul>
+    <li>Led the launch of three new verticals, generating IDR 5B in daily Gross Booking Value (GBV) and serving over 100K passengers within the first month of release</li>
+    <li>Achieved a 15x increase in train insurance revenue through strategic low-effort initiatives</li>
+    <li>Drove a 4x growth in train revenue by implementing dynamic pricing strategies</li>
+    <li>Improved bus conversion CMGR by 13% through strategic initiatives including POI classification and QR-based boarding passes; reduced POI redundancy by 60% and decreased conversion time by 15%</li>
+    <li>Enhanced PM productivity by more than 100% through streamlined analytical processes, including report automation, automated workflows, and configurable data alerts</li>
+    <li>Decreased Customer Service's Case-to-Book ratio by 60% through implementation of a seamless refund process</li>
+  </ul>
+</div>
+
+<!-- SECOND EXPERIENCE BLOCK -->
+<div class="experience-block">
+  <div class="company-dates-row">
+    <div>Tokopedia - Jakarta, ID</div>
+    <div>Feb 2022 – Sep 2022</div>
+  </div>
+  <div class="job-title">Lead Product Manager</div>
+  <ul>
+    <li>Initiated and launched Day Sales of Inventory (DSI) Proof of Concept, reducing stock discrepancy by over 50% and enhancing pricing accuracy</li>
+    <li>Led the acceleration of seller onboarding and first purchase processes for Seller Fulfillment Product by automating stock allocation through Integrated Business Process product</li>
+    <li>Automated invoice generation process, improving financial process efficiency by more than 30%</li>
+  </ul>
+</div>
+
+<!-- THIRD EXPERIENCE BLOCK -->
+<div class="experience-block">
+  <div class="company-dates-row">
+    <div>tiket.com - Jakarta, ID</div>
+    <div>Apr 2021 – Feb 2022</div>
+  </div>
+  <div class="job-title">Senior Product Manager</div>
+  <ul>
+    <li>Led the mobile revamp of Extranet App Platform, enhancing accommodation providers' ability to manage availability and pricing on-the-go</li>
+    <li>Implemented rates improvement feature enabling accommodations to activate special rates for cross-sell and corporate bookings</li>
+    <li>Developed Length of Stay (LoS) based rate system, providing accommodations with flexible pricing models</li>
+  </ul>
+</div>
+  
+<!-- FOURTH EXPERIENCE BLOCK -->
+<div class="experience-block">
+  <div class="company-dates-row">
+    <div>Lion Parcel - Jakarta, ID</div>
+    <div>Mar 2020 – Mar 2021</div>
+  </div>
+  <div class="job-title">Product Lead</div>
+  <ul>
+    <li>Led a special squad team focused on streamlining Lion Air Group passenger experience through digital transformation</li>
+    <li>Spearheaded Drive-App team initiatives, achieving 40% improvement in organic/automated driver acceptance rates, significantly reducing internal dispatcher workload</li>
+  </ul>
+</div>
+
+<!-- FIFTH EXPERIENCE BLOCK -->
+<div class="experience-block">
+  <div class="company-dates-row">
+    <div>Sorabel - Tangerang, ID</div>
+    <div>Apr 2018 – Feb 2020</div>
+  </div>
+  <div class="job-title">
+    Senior Product Manager, Enterprise (Feb 2020 – Mar 2020)
+  </div>
+  <ul>
+    <li>Promoted to Senior Product Manager based on consistent strong performance in enterprise product management</li>
+    <li>Provided strategic advisory and planning to ensure adoption of ERP best practices</li>
+    <li>Contributed to Sorabel's new service architecture design and implemented data monitoring and alerting systems to facilitate informed decision-making</li>
+  </ul>
+  <div class="job-title">
+    Product Manager, Commercial (Apr 2018 – Feb 2020)
+  </div>
+  <ul>
+    <li>Led sourcing, production, and merchandising product development, reducing manual workload by 70% through migration from manual sheet tracking to in-house enterprise production system</li>
+    <li>Implemented self-service analytics for the business analysis team through structured data enablement, improving decision-making capabilities</li>
+  </ul>
+</div>
+
+<!-- EDUCATION -->
+<div class="section-title">Education</div>
+<hr class="section-line" />
+
+<div class="education-block">
+  <div class="school-row">
+    <div>Brawijaya University - Malang, ID</div>
+    <div>2011 - 2015</div>
+  </div>
+  <div class="degree-name">
+    Bachelor of Economics <br>
+  </div>
+  <div class="degree-info">
+    Major in Financial Management <br>
+    Cumulative GPA: 3.67/4.00
+  </div>
+</div>
+
+<!-- SKILLS -->
+<div class="section-title">Skills</div>
+<hr class="section-line" />
+
+<div class="skills-block">
+  <table class="skills-table">
+    <tr>
+      <td>
+        <ul>
+          <li>Strategic Product Development</li>
+          <li>Process Optimization & Automation</li>
+          <li>Data Analytics & Dynamic Pricing</li>
+          <li>Platform Scaling & Integration</li>
+          <li>Agile Methodologies</li>
+          <li>User Experience Design</li>
+        </ul>
+      </td>
+      <td>
+        <ul>
+          <li>JIRA</li>
+          <li>SQL</li>
+          <li>MongoDB</li>
+          <li>Tableau</li>
+          <li>Data Visualization</li>
+          <li>Google BigQuery</li>
+        </ul>
+      </td>
+    </tr>
+  </table>
+</div>
+
+</body>
+</html>
