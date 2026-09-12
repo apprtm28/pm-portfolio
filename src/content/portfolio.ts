@@ -10,6 +10,7 @@ export const links = {
   mailto: "mailto:agung.pprtm@gmail.com",
   linkedin: "https://linkedin.com/in/apprtm",
   netMates: "https://netmates.cc",
+  reverseMde: "https://github.com/apprtm28/reverse-MDE-calc",
 } as const;
 
 export type NavItem = { id: string; label: string };
@@ -301,15 +302,25 @@ export const products = {
   label: "Hands-on product practice",
   heading: "Personal Products",
   intro:
-    "Personal product work tests whether a product choice still makes sense once it becomes a flow someone can use.",
-  featured: {
-    title: "Net Mates",
-    status: "Hobby product",
-    url: links.netMates,
-    urlLabel: "netmates.cc",
-    body: "Net Mates is my hobby product and the clearest view of my work outside a company role. It gives me direct practice in defining flows, weighing implementation choices, and reviewing the live experience.",
-    action: "Visit Net Mates",
-  },
+    "Personal product work tests whether a product choice still makes sense once it becomes something someone can use — a flow, or a working tool.",
+  items: [
+    {
+      title: "Net Mates",
+      status: "Hobby product",
+      url: links.netMates,
+      urlLabel: "netmates.cc",
+      body: "Net Mates is my hobby product and the clearest view of my work outside a company role. It gives me direct practice in defining flows, weighing implementation choices, and reviewing the live experience.",
+      action: "Visit Net Mates",
+    },
+    {
+      title: "Reverse MDE Calculator",
+      status: "Experiment planning tool",
+      url: links.reverseMde,
+      urlLabel: "github.com/apprtm28/reverse-MDE-calc",
+      body: "I manage several Ground Transport verticals at tiket.com where the traffic and pattern are already known — the constraint is time, not volume. Standard calculators answer how much traffic a target effect needs; under a fixed window I need the reverse, so I can judge whether a test can detect a meaningful effect before running it.",
+      action: "View the repository",
+    },
+  ],
 } as const;
 
 export const contact = {

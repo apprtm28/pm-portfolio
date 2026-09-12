@@ -287,23 +287,30 @@ export default function Home() {
           </div>
         </Section>
 
-        {/* Stage 10 of 11 — Personal products, Net Mates featured */}
+        {/* Stage 10 of 11 — Personal products */}
         <Section id="products" label={products.label} heading={products.heading} intro={products.intro}>
-          <article className="space-y-4 rounded-lg border border-border p-5 sm:p-8">
-            <div className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-2">
-              <h3 className="text-xl font-medium tracking-tight sm:text-2xl">{products.featured.title}</h3>
-              <SectionLabel>{products.featured.status}</SectionLabel>
-            </div>
-            <p className="max-w-reading text-sm leading-relaxed text-muted-foreground sm:text-base">
-              {products.featured.body}
-            </p>
-            <div className="flex flex-col gap-1">
-              <ArrowLink href={products.featured.url} external>
-                {products.featured.action}
-              </ArrowLink>
-              <p className="break-words font-mono text-xs text-muted-foreground">{products.featured.url}</p>
-            </div>
-          </article>
+          <div className="space-y-5">
+            {products.items.map((product) => (
+              <article
+                key={product.title}
+                className="space-y-4 rounded-lg border border-border p-5 sm:p-8"
+              >
+                <div className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-2">
+                  <h3 className="text-xl font-medium tracking-tight sm:text-2xl">{product.title}</h3>
+                  <SectionLabel>{product.status}</SectionLabel>
+                </div>
+                <p className="max-w-reading text-sm leading-relaxed text-muted-foreground sm:text-base">
+                  {product.body}
+                </p>
+                <div className="flex flex-col gap-1">
+                  <ArrowLink href={product.url} external>
+                    {product.action}
+                  </ArrowLink>
+                  <p className="break-words font-mono text-xs text-muted-foreground">{product.url}</p>
+                </div>
+              </article>
+            ))}
+          </div>
         </Section>
 
         {/* Stage 11 of 11 — Contact, paired with the identity footer below */}
